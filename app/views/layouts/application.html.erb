@@ -32,24 +32,21 @@
          <%= link_to "sign up", new_user_registration_path,class:"fas fa-user-plus nav-link text-light"  %>
          <%= link_to "login", new_user_session_path,class:"fas fa-sign-in-alt nav-link text-light"  %>
         <% end %>
-    </ul>
+      </ul>
+     </div>
     </div>
-    </div>
-    </nav>
-    </header>
-    <%= yield %>
+   </nav>
+  </header>
+ <%= yield %>
 
-    <footer>
-  <div class="container mt-5">
+  <footer>
+   <div class="container mt-5">
   	<div class="row">
-    	<div class="mx-auto">
-    		<p>CopyRight Infratop.inc</p>
-    	</div>
+     <div class="mx-auto">
+    	<p>CopyRight Infratop.inc</p>
+     </div>
     </div>
-  </div>
-</footer>
-
-</body>
-
-
+   </div>
+  </footer>
+ </body>
 </html>

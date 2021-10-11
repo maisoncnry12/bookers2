@@ -1,9 +1,5 @@
 class BooksController < ApplicationController
-  before_action :correct_post,only: [:edit,:update, :destroy]
-
-  def new
-    @book = Book.new
-  end
+  before_action :correct_post,only: [:edit, :update, :destroy]
 
   def create
     @book = Book.new(book_params)
@@ -20,7 +16,6 @@ class BooksController < ApplicationController
   def index
     @books = Book.all
     @book = Book.new
-
   end
 
   def show
